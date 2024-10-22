@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'bg-nav': '#1c1c21',
+        'bg-nav': '#222',
+        'border-grey': '#444',
+        'text-grey': '#AAA',
+        'grey-200': '#282828',
       }
     },
   },

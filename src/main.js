@@ -10,8 +10,9 @@ if (require('electron-squirrel-startup')) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 1100,
-    height: 700,
+    titleBarStyle: 'hidden',
+    width: 1280,
+    height: 720,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
       nodeIntegration: true,
@@ -40,12 +41,8 @@ const createWindow = () => {
   } else {
     mainWindow.loadFile(path.join(__dirname, 'index.html'));
   }
-
-  // Open the DevTools.
-  if (process.env.NODE_ENV === 'development') {
-    mainWindow.webContents.openDevTools();
-  }
 };
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.

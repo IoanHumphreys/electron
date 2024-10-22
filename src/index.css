@@ -6,4 +6,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+}
+
+body {
+    background-color: #1e1d1d;
+}
+
+.h-screen-neg-title {
+    height: calc(100vh - 3rem);
+}
+
+.drag {
+    -webkit-app-region: drag;
+}
+
+.no-drag {
+    -webkit-app-region: no-drag;
 }
