@@ -1,16 +1,18 @@
+// tailwind.config.js
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
       colors: {
-        'bg-nav': '#222',
-        'border-grey': '#444',
-        'text-grey': '#AAA',
-        'grey-200': '#282828',
+        'primary-dark': '#191818',      
+        'primary-darker': '#131212',      
+        'border-subtle': '#444',     
+        'profile': '#252525',
+        'text-secondary': '#AAA',    
+        'hover-highlight': '#282828' 
       }
     },
   },
   plugins: [],
 }
-
